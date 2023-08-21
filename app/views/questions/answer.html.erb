@@ -1,0 +1,9 @@
+<h1><%= params[:question] %></h1>
+
+<% if params[:question].end_with?("?") %>
+  <h2><%= "Silly question, get dressed and go to work!." %></h2>
+<% elsif params[:question] == "I am going to work" %>
+  <h2><%= "Great!" %></h2>
+<% else %>
+  <h2><%= "I don't care, get dressed and go to work!" %></h2>
+<% end %>
